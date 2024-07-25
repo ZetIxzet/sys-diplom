@@ -1,0 +1,7 @@
+---
+- hosts: webserver
+  remote_user: voron
+  become: yes
+  become_method: sudo
+  roles:
+    - filebeat

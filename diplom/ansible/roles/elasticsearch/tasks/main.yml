@@ -1,0 +1,38 @@
+---
+- name: ping server
+  ping:
+
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install gnupg, apt-transport-https
+  apt:
+    name:
+      - apt-transport-https
+      - gnupg
+    state: present
+
+- name: Copy elasticsearch-7.17.14-amd64.deb
+  ansible.builtin.get_url:
+    url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/e/elasticsearch/elasticsearch-7.17.14-amd64.deb
+    dest: /home/voron/
+
+- name: Install elasticsearch
+  apt:
+    deb: /home/voron/elasticsearch-7.17.14-amd64.deb
+
+- name: Copy config file for elasticsearch
+  copy:
+    src: /home/voron/ansible/roles/elasticsearch/files/elasticsearch.yml
+    dest: /etc/elasticsearch
+    mode: 0644
+    owner: voron
+    group: root
+
+- name: enable and restart elasticsearch
+  ansible.builtin.systemd:
+    name: elasticsearch
+    enabled: true
+    masked: no
+    state: restarted
