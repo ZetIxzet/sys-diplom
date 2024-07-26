@@ -31,6 +31,7 @@ http://51.250.40.222:80/
 ![Zabbix](https://github.com/ZetIxzet/sys-diplom/blob/main/image/zabbix.png)
 
 Zabbix доступен по ссылке:
+login(guest)
 http://89.169.131.26:8080/zabbix.php?action=dashboard.view&dashboardid=346&from=now-1h&to=now
 
 # 5. Логи Kibana и Elasticsearch
