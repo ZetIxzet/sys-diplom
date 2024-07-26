@@ -7,10 +7,15 @@
 
 ### Созданная инфраструктура на yandex.cloud:
 ![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20all.png)
+vm
 ![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20vm.png)
+router
 ![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20router.png)
+tg-group
 ![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20tg%20group.png)
+balancer
 ![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20balancer.png)
+backend-group
 ![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20backend-group.png)
 
 ### Было созданно 6 виртуальных машин на базе Ubuntu, Балансировщик, Target Group, Backend Group, HTTP-router
