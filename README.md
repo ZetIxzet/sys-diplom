@@ -2,19 +2,22 @@
 ### [Задание Дипломной работы](https://github.com/netology-code/sys-diplom)
 
 # 1. Для развертки инфраструкты используем Terraform:
-### [Конфигурационный файл Terraform main.tf]( )
-### [Файл с настройками пользователя meta.txt]( )
+### [Конфигурационный файл Terraform main.tf](https://github.com/ZetIxzet/sys-diplom/blob/main/diplom/terraform/main.tf)
+### [Файл с настройками пользователя meta.txt](https://github.com/ZetIxzet/sys-diplom/blob/main/diplom/terraform/meta.yml)
 
 ### Созданная инфраструктура на yandex.cloud:
-![yandex.cloud]( )
-![yandex.cloud]( )
-![yandex.cloud]( )
+![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20all.png)
+![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20vm.png)
+![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20router.png)
+![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20tg%20group.png)
+![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20balancer.png)
+![yandex.cloud](https://github.com/ZetIxzet/sys-diplom/blob/main/image/ya%20cloud%20backend-group.png)
 
 ### Было созданно 6 виртуальных машин на базе Ubuntu, Балансировщик, Target Group, Backend Group, HTTP-router
 
 # 2. С помощью Ansible устанавливаем и настраиваем нужные нам сервисы на хостах (развёрнут на bastion-vm):
 
-### [Конфигурационный файлы Ansible]( )
+### [Конфигурационный файлы Ansible](https://github.com/ZetIxzet/sys-diplom/tree/main/diplom/ansible)
 
 
 
